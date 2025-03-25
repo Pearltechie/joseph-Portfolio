@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibeanusi Chibuike Josephat | Data Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="1-styles.css">
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+
+    <header>
+        <h1>Ibeanusi Chibuike Josephat</h1>
+        <p>Unlocking the Secrets of Data, One Insight at a Time 🌟📊</p>
+        <div class="particles">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative flex flex-col items-center justify-center h-screen text-center">
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-900 to-gray-800 opacity-70"></div>
+
+        <!-- Profile Picture (Animated Drop Effect) -->
+        <img id="profile-img" src="joseph.jpg" alt="Ibeanusi Chibuike" 
+             class="w-48 h-48 rounded-full shadow-lg transform scale-0 transition-transform duration-1000">
+
+        <h1 id="name-text" class="text-5xl font-bold mt-6 opacity-0"></h1>
+        <p id="intro-text" class="text-lg mt-2 opacity-0">Transforming raw data into powerful insights 📊</p>
+
+        <!-- Scroll Down Animation -->
+        <div id="scroll-icon" class="absolute bottom-10 animate-bounce">
+            <span class="text-xl"> Data Analyst</span>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="px-6 py-12 md:px-20 bg-gray-800">
+        <h2 class="text-4xl font-bold text-center mb-6">About Me</h2>
+        <p class="text-lg text-gray-300 leading-7 text-center max-w-3xl mx-auto">
+            Hi, I’m Ibeanusi Chibuike Josephat, a passionate Data Analyst dedicated to transforming raw data into 
+            powerful insights. My journey into data analytics began with a curiosity about how numbers tell stories, 
+            stories that drive business decisions, optimize operations, and solve real-world problems.
+        </p>
+        <p class="text-lg text-gray-300 leading-7 text-center max-w-3xl mx-auto mt-4">
+            With expertise in SQL, Power BI, Excel, and DAX, I specialize in data cleaning, analysis, visualization, and 
+            predictive modeling. From projects like Maji Ndogo: Water Quality and Infrastructure Analysis to analyzing 
+            Climate impact on Rice yield in Africa, I thrive on solving complex challenges.
+        </p>
+
+        <div class="text-center mt-6">
+            <a href="mailto:Ibeanusijoseph20@gmail.com" class="bg-yellow-500 px-6 py-2 rounded-lg text-lg font-semibold 
+                hover:bg-yellow-600 transition">📧 Email Me</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="px-6 py-12 md:px-20 bg-gray-900">
+        <h2 class="text-4xl font-bold text-center mb-6"> Hard Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="skill-card">SQL & Database Management</div>
+            <div class="skill-card">Data Visualization</div>
+            <div class="skill-card">Excel & Spreadsheets</div>
+            <div class="skill-card">Statistics & Probability</div>
+            <div class="skill-card">ETL Processes</div>
+            <div class="skill-card">DAX Expressions</div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="px-6 py-12 md:px-20 bg-gray-900">
+        <h2 class="text-4xl font-bold text-center mb-6"> Soft Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="skill-card">Critical Thinking & Problem-Solving</div>
+            <div class="skill-card">Communication & Storytelling</div>
+            <div class="skill-card">Attention to Detail</div>
+            <div class="skill-card">Collaboration & Teamwork</div>
+            <div class="skill-card">Time Management </div>
+            <div class="skill-card">Business Acumen</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="text-center py-12 bg-gray-800">
+        <h2 class="text-3xl font-bold">Let’s Connect</h2>
+        <div class="flex justify-center gap-6 mt-4">
+            <a href="https://github.com/joetech200" target="_blank" class="contact-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/ibeanusichibuike/" target="_blank" class="contact-btn">LinkedIn</a>
+        </div>
+    </section>
+
+    <section class="canvas-container">
+        <canvas id="three-canvas"></canvas>
+    </section>
+
+    <div data-scroll-container>
+        <section class="hero">
+        </section>
+
+        <section class="content">
+        </section>
+    </div>
+
+    <!-- Button to Projects -->
+    <div class="text-center py-12">
+        <a href="projects.html" class="projects-btn">Click Here to Check My Projects</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+     <!-- Three.js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+     <!-- GSAP for animations -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+ 
+     <!-- Locomotive Scroll -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="1-scripts.js"></script>
+</body>
+</html>
