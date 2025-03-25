@@ -1,0 +1,232 @@
+/* Custom Scroll Effect */
+body {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    
+    color: white;
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+    z-index: 1;
+    position: relative;
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating Particles */
+header .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+header .particles div {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: float 12s infinite;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+/* Randomly position particles */
+header .particles div:nth-child(1) { left: 10%; animation-duration: 8s; }
+header .particles div:nth-child(2) { left: 50%; animation-duration: 2s; }
+header .particles div:nth-child(3) { left: 50%; animation-duration: 10s; }
+header .particles div:nth-child(4) { left: 50%; animation-duration: 14s; }
+header .particles div:nth-child(5) { left: 50%; animation-duration: 9s; }
+header .particles div:nth-child(6) { left: 60%; animation-duration: 11s; }
+header .particles div:nth-child(7) { left: 70%; animation-duration: 13s; }
+header .particles div:nth-child(8) { left: 80%; animation-duration: 15s; }
+header .particles div:nth-child(9) { left: 90%; animation-duration: 5s; }
+header .particles div:nth-child(10) { left: 100%; animation-duration: 2s; }
+
+#profile-img {
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+    border-radius: 50%;
+    transition: 0.3s;
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+#profile-img:hover {
+    transform: rotate(360deg);
+}
+/* Skill Card Styling */
+.skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.skill-card:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Contact Links */
+.contact-link {
+    padding: 10px 20px;
+    border: 2px solid #FACC15;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.contact-btn {
+    border: 2px solid #FACC15;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.contact-btn:hover {
+    background: #FACC15;
+    color: white;
+}
+
+.contact-link:hover {
+    background: #FACC15;
+    color: white;
+}
+
+/* Projects Button */
+.projects-btn {
+    background: linear-gradient(to right, #FACC15, #FF7F50);
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.projects-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 165, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        height: auto;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    #profile-img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .skill-card {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .projects-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #profile-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .skill-card {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .projects-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
