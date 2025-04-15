@@ -379,7 +379,7 @@
     animation: titleReveal 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
   header h2 {
-    font-size: 5rem;
+    font-size: 2rem;
     font-weight: 800;
     letter-spacing: -0.05em;
     line-height: 1;
