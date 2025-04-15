@@ -383,7 +383,7 @@
     font-weight: 800;
     letter-spacing: -0.05em;
     line-height: 1;
-    margin: 0 0 0rem;
+    margin: 0 4 0rem;
     z-index: 2;
     position: relative;
     background: linear-gradient(90deg, var(--text) 0%, var(--accent) 70%, var(--accent-alt) 100%);
